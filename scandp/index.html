@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="ScanDP: Generalizable 3D Scanning with Diffusion Policy - Itsuki Hirako, Ryo Hakoda, Yubin Liu, Fourth Author, Fifth Author, Sixth Author">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -21,11 +21,11 @@
   <!-- TODO: Replace with your institution or lab name -->
   <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="ScanDP: Generalizable 3D Scanning with Diffusion Policy - Itsuki Hirako, Ryo Hakoda, Yubin Liu, Fourth Author, Fifth Author, Sixth Author">
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+
+  <meta property="og:url" content="https://treeitsuki.github.io/scandp/">
   <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
@@ -289,15 +289,16 @@
                     <span class="author-block">
                       <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Fourth Author</a><sup>1</sup>,</span>
                       <span class="author-block">
-                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Fifth Author</a><sup>2</sup>,</span>
+                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Yoshihiro Sato</a><sup>2</sup>,</span>
                         <span class="author-block">
-                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Sixth Author</a><sup>1</sup>
+                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Takeshi Oishi</a><sup>1</sup>
                         </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1</sup>INSTITUTION_NAME_1<br><sup>2</sup>INSTITUTION_NAME_2<br>Conference name and year</span>
+                    <!-- <span class="author-block"><sup>1</sup>The University of Tokyo<br><sup>2</sup>Kyoto University of Advanced Science,<br>Conference name and year</span> -->
+                    <span class="author-block"><sup>1</sup>The University of Tokyo<br><sup>2</sup>Kyoto University of Advanced Science</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -326,7 +327,7 @@
 
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://treeitsuki.github.io/scandp/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -381,7 +382,15 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Learning-based 3D Scanning plays a crucial role in enabling efficient and accurate scanning of target objects.
+            However, recent reinforcement learning-based methods often require large-scale training data and still struggle to generalize to unseen object categories.
+            In this work, we propose a data-efficient 3D scanning framework that uses Diffusion Policy to imitate human-like scanning strategies.
+
+            To enhance robustness and generalization, we adopt the Occupancy Grid Mapping instead of direct point cloud processing, offering improved noise resilience and handling of diverse object geometries.
+            We also introduce a hybrid approach combining a sphere-based space representation with a path optimization procedure that ensures path safety and scanning efficiency. 
+            This approach addresses limitations in conventional imitation learning, such as redundant or unpredictable behavior.
+
+            We evaluate our method on diverse object categories and show that it achieves higher coverage and shorter paths than baselines, while remaining robust to sensor noise. 
           </p>
         </div>
       </div>
