@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://treeitsuki.github.io/sitemap.xml
