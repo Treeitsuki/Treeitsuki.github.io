@@ -314,10 +314,9 @@
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <source src="static/videos/IROS_supplement.mp4" type="video/mp4">
       </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
-      </h2>
+      <video poster="" id="real-world-teaser" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/videos/real_low.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -341,6 +340,9 @@
             Ours achieves higher coverage and shorter paths than baselines, while remaining robust to sensor noise.
             We further confirm practical feasibility and stable operation in real-world execution. 
           </p>
+          <figure class="image mt-5 abstract-teaser-figure">
+            <img class="abstract-teaser-image" src="static/images/teaser.png" alt="ScanDP teaser figure" loading="lazy"/>
+          </figure>
         </div>
       </div>
     </div>
@@ -360,6 +362,14 @@
           All policies are trained only on trajectories scanning the Stanford Bunny. 
           Coverage is shown in mean $\pm$ std.
           We find that ScanDP consistently achieves the highest coverage while maintaining low variance.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/path_coverage.png" alt="Second research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          We show that our method achieves high coverage with a shorter travel distance.  
+          In contrast, DP3 and our method without path optimization include many redundant motions, leading to inefficiency and longer path lengths. 
         </h2>
       </div>
       <div class="item">
@@ -402,9 +412,14 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video publication-video-with-caption">
             <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
             <img src="static/images/overview.png" alt="Video presentation placeholder" loading="lazy"/>
+            <p class="subtitle has-text-centered">
+              ScanDP consists of two main components: Path Generation (Upper part) and Path Optimization (Lower part).
+              In the Path Generation phase, actions are generated from a diffusion policy conditioned on an occupancy grid map (OGM) and the current camera pose.
+              In the Path Optimization phase, the generated actions are refined through a bubble-based collision filter and viewpoint extraction to optimize the scanning trajectory.
+            </p>
           </div>
         </div>
       </div>

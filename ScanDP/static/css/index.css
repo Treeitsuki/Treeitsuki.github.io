@@ -112,7 +112,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
 /* Publication Content Styling */
 .publication-title {
     font-family: 'Inter', sans-serif !important;
@@ -242,6 +241,30 @@ body {
     border-radius: var(--border-radius-lg);
 }
 
+/* Variant used when image and caption must coexist in one block */
+.publication-video-with-caption {
+    height: auto;
+    padding-bottom: 0;
+    overflow: visible;
+    padding: 1rem;
+}
+
+.publication-video-with-caption img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.publication-video-with-caption .subtitle {
+    font-size: 1rem !important;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: var(--text-secondary);
+}
+
 .publication-body img {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
@@ -339,6 +362,17 @@ body {
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+.abstract-teaser-figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.abstract-teaser-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Footer Improvements */
@@ -748,6 +782,3 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
-
-
